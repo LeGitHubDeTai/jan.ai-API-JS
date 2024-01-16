@@ -1,0 +1,25 @@
+{
+  "name": "jan.ai-api-js",
+  "version": "1.0.0",
+  "description": "This repository provides a simple JavaScript wrapper for interacting with the Jan.ai API. The wrapper allows you to make various API requests easily in your JavaScript applications.",
+  "main": "janApi.js",
+  "scripts": {
+    "test": "node janApi.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeGitHubDeTai/jan.ai-API-JS.git"
+  },
+  "keywords": [
+    "jan.ai",
+    "API",
+    "javascript",
+    "js"
+  ],
+  "author": "Tai Tetsuyuki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeGitHubDeTai/jan.ai-API-JS/issues"
+  },
+  "homepage": "https://github.com/LeGitHubDeTai/jan.ai-API-JS#readme"
+}
