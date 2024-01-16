@@ -79,24 +79,22 @@ async function GetModel(name) {
     return model;
 }
 
-async function CompleteChat(name) {
+async function CompleteChat(instructions, message) {
     var chat = await post(`v1/chat/completions`, {
         "messages": [
             {
-                "content": "You are a helpful assistant.",
+                "content": instructions || "You are a helpful assistant.",
                 "role": "system"
             },
             {
-                "content": "Hello!",
+                "content": message || "Hello!",
                 "role": "user"
             }
         ],
         "model": "mistral-ins-7b-q4",
-        "stream": true,
-        "max_tokens": 2048,
-        "stop": [
-            "hello"
-        ],
+        "stream": false,
+        "max_tokens": 1024,
+        "stop": [],
         "frequency_penalty": 0,
         "presence_penalty": 0,
         "temperature": 0.7,
