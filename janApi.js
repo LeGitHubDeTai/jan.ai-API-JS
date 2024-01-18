@@ -79,7 +79,7 @@ async function GetModel(name) {
     return model;
 }
 
-async function CompleteChat(instructions, message) {
+async function CompleteChat({instructions, message, model, stream, max_tokens, stop, frequency_penalty, presence_penalty, temperature, top_p}) {
     var chat = await post(`v1/chat/completions`, {
         "messages": [
             {
@@ -91,14 +91,14 @@ async function CompleteChat(instructions, message) {
                 "role": "user"
             }
         ],
-        "model": "mistral-ins-7b-q4",
-        "stream": false,
-        "max_tokens": 1024,
-        "stop": [],
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "temperature": 0.7,
-        "top_p": 0.95
+        "model": model || "mistral-ins-7b-q4",
+        "stream": stream || false,
+        "max_tokens": max_tokens ||1024,
+        "stop": stop || [],
+        "frequency_penalty": frequency_penalty || 0,
+        "presence_penalty": presence_penalty || 0,
+        "temperature": temperature || 0.7,
+        "top_p": top_p || 0.95
     }
     );
     return chat;
