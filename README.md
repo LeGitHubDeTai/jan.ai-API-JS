@@ -1,4 +1,7 @@
 # Jan.ai API Wrapper for JavaScript
+> **⚠️ Obsolete Notice**  
+> This project is now considered obsolete due to changes in the API. For the most up-to-date and official documentation, please refer to the following link: [Cortex API Reference](https://cortex.so/api-reference).
+
 This repository provides a simple JavaScript wrapper for interacting with the Jan.ai API. The wrapper allows you to make various API requests easily in your JavaScript applications.
 
 ## Example Usage
