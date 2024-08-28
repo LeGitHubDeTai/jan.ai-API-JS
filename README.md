@@ -1,4 +1,6 @@
 # Jan.ai API Wrapper for JavaScript
+![Obsolete](https://img.shields.io/maintenance/no/2024
+)
 > **⚠️ Obsolete Notice**  
 > This project is now considered obsolete due to changes in the API. For the most up-to-date and official documentation, please refer to the following link: [Cortex API Reference](https://cortex.so/api-reference).
 
